@@ -8,7 +8,6 @@ import { ProductWithAmount, RecipesFacadeService } from '@nx/recipes';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductsComponent {

@@ -19,7 +19,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     AsyncPipe,
   ],
   templateUrl: './schedule.component.html',
-  styleUrls: ['./schedule.component.scss'],
 })
 export class ScheduleComponent implements OnInit {
   myControl = new FormControl('');

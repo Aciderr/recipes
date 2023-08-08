@@ -15,7 +15,6 @@ import { toSignal } from '@angular/core/rxjs-interop';
   standalone: true,
   imports: [CommonModule, MatTableModule],
   templateUrl: './recipes-list.component.html',
-  styleUrls: ['./recipes-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RecipesListComponent {
