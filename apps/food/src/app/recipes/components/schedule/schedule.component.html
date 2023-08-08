@@ -1,0 +1,68 @@
+<div class="fo-schedule">
+  <div>
+    <div>Poniedziałek</div>
+    <div>
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Number</mat-label>
+          <input type="text"
+                 placeholder="Pick one"
+                 aria-label="Number"
+                 matInput
+                 [formControl]="myControl"
+                 [matAutocomplete]="auto">
+          <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form>
+    </div>
+    <div>xxx</div>
+    <div>xxx</div>
+    <div>xxx</div>
+  </div>
+  <div>
+    <div>Wtorek</div>
+    <div>xxx</div>
+    <div>xxx</div>
+    <div>xxx</div>
+    <div>xxx</div>
+  </div>
+  <div>
+    <div>Środa</div>
+    <div>xxx</div>
+    <div>xxx</div>
+    <div>xxx</div>
+    <div>xxx</div>
+  </div>
+  <div>
+    <div>Czwartek</div>
+    <div>xxx</div>
+    <div>xxx</div>
+    <div>xxx</div>
+    <div>xxx</div>
+  </div>
+  <div>
+    <div>Piątek</div>
+    <div>xxx</div>
+    <div>xxx</div>
+    <div>xxx</div>
+    <div>xxx</div>
+  </div>
+  <div>
+    <div>Sobota</div>
+    <div>xxx</div>
+    <div>xxx</div>
+    <div>xxx</div>
+    <div>xxx</div>
+  </div>
+  <div>
+    <div>Niedziela</div>
+    <div>xxx</div>
+    <div>xxx</div>
+    <div>xxx</div>
+    <div>xxx</div>
+  </div>
+</div>
