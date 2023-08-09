@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { RecipesListComponent } from './recipes/components/recipes-list/recipes-list.component';
 import { TopNavigationComponent } from './recipes/components/top-navigation/top-navigation.component';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, RecipesListComponent, TopNavigationComponent],
+  imports: [RouterModule, TopNavigationComponent],
   selector: 'fo-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

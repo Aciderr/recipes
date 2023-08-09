@@ -15,7 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx/recipes": ["libs/recipes/src/index.ts"]
+      "@nx/products": ["libs/products/src/index.ts"],
+      "@nx/recipes": ["libs/recipes/src/index.ts"],
+      "@nx/recipes-data": ["libs/recipes-data/src/index.ts"],
+      "@nx/schedule": ["libs/schedule/src/index.ts"],
+      "@nx/util-recipes": ["libs/util-recipes/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
