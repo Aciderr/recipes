@@ -8,4 +8,4 @@ import { RecipesService } from './recipes.service';
   controllers: [RecipesController],
   providers: [RecipesService],
 })
-export class RecipesModule {}
+export class SharedRecipesModule {}
