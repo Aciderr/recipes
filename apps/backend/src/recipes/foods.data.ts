@@ -1,4 +1,4 @@
-import { Product, Recipe } from '@nx/shared/recipes/util';
+import { Product, Recipe } from "@nx/shared/recipes/utils";
 
 export const products: Record<string, Product> = {
   '1': { id: '1', name: 'Jajko' },

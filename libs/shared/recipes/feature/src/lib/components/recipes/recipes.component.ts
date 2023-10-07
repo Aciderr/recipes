@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RecipesFacadeService } from '@nx/shared/recipes/data-access';
 import { MatTableModule } from '@angular/material/table';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { Recipe } from '@nx/shared/recipes/util';
+import { Recipe } from '@nx/shared/recipes/utils';
 
 @Component({
   selector: 'nx-recipes',

@@ -1,6 +1,6 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 import { RecipesState } from '../../store/reducers/recipes.reducer';
-import { ProductWithAmount } from '@nx/shared/recipes/util';
+import { ProductWithAmount } from '@nx/shared/recipes/utils';
 
 const selectRecipesFeature =
   createFeatureSelector<Readonly<RecipesState>>('recipes');

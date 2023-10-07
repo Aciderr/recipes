@@ -1,6 +1,6 @@
 import { createReducer, on } from '@ngrx/store';
 import { loadFoodFailed, loadFoodSuccess } from '../actions/food.actions';
-import { Recipe } from '@nx/shared/recipes/util';
+import { Recipe } from "@nx/shared/recipes/utils";
 
 export interface RecipesState {
   recipes: Recipe[];

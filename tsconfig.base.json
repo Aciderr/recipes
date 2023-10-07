@@ -23,6 +23,7 @@
         "libs/shared/recipes/feature/src/index.ts"
       ],
       "@nx/shared/recipes/util": ["libs/shared/recipes/util/src/index.ts"],
+      "@nx/shared/recipes/utils": ["libs/shared/recipes/utils/src/index.ts"],
       "@nx/shared/schedule": ["libs/shared/schedule/src/index.ts"]
     }
   },

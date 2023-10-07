@@ -6,7 +6,7 @@ import {
   selectRecipes,
 } from '../store/selectors/recipes.selectors';
 import { loadFood } from '../store/actions/food.actions';
-import { ProductWithAmount, Recipe } from '@nx/shared/recipes/util';
+import { ProductWithAmount, Recipe } from '@nx/shared/recipes/utils';
 
 @Injectable({
   providedIn: 'root',

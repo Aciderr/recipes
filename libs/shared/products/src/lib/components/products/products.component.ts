@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
-import { ProductWithAmount } from '@nx/shared/recipes/util';
+import { ProductWithAmount } from '@nx/shared/recipes/utils';
 import { RecipesFacadeService } from '@nx/shared/recipes/data-access';
 
 @Component({
