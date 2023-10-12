@@ -4,7 +4,16 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+      - run: git fetch --no-tags --prune --depth=5 origin master
+      - run: yarn install --frozen-lockfile
+      - run: yarn affected:build --base=origin/master
+        env:
+          CI: true
       - uses: nrwl/nx-set-shas@v3
       - run: npm ci
-      - run: npx nx show projects --affected --base= origin/main~1 --head= origin/main
+      - run: npx nx show projects --affected --base=origin/main~1 --head=origin/main
+
