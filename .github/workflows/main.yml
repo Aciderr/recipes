@@ -6,13 +6,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: main
           fetch-depth: 0
       - run: git fetch --no-tags --prune --depth=5 origin main
-#      - run: yarn install --frozen-lockfile
-#      - run: yarn affected:build --base=origin/main
-        env:
-          CI: true
       - uses: nrwl/nx-set-shas@v3
       - run: npm ci
       - run: npx nx show projects --affected
