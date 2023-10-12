@@ -1,6 +1,6 @@
 {
   "name": "shared-recipes-data",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/shared/recipes-data/src",
   "prefix": "nx",
   "tags": [],

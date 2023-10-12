@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx/shared/products": ["libs/shared/products/src/index.ts"],
+      "@nx/shared/products/feature": [
+        "libs/shared/products/feature/src/index.ts"
+      ],
       "@nx/shared/recipes/data-access": [
         "libs/shared/recipes/data-access/src/index.ts"
       ],
@@ -24,7 +26,8 @@
       ],
       "@nx/shared/recipes/util": ["libs/shared/recipes/util/src/index.ts"],
       "@nx/shared/recipes/utils": ["libs/shared/recipes/utils/src/index.ts"],
-      "@nx/shared/schedule": ["libs/shared/schedule/src/index.ts"]
+      "@nx/shared/schedule": ["libs/shared/schedule/src/index.ts"],
+      "@nx/shared/ui": ["libs/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

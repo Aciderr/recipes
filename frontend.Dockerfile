@@ -2,7 +2,7 @@ FROM node:alpine as builder
 
 WORKDIR '/app'
 
-COPY ./dist/apps/desktop .
+COPY ./dist/apps/web .
 
 #RUN npm install --force
 
