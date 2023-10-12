@@ -8,9 +8,9 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
-      - run: git fetch --no-tags --prune --depth=5 origin master
+      - run: git fetch --no-tags --prune --depth=5 origin main
       - run: yarn install --frozen-lockfile
-      - run: yarn affected:build --base=origin/master
+      - run: yarn affected:build --base=origin/main
         env:
           CI: true
       - uses: nrwl/nx-set-shas@v3
