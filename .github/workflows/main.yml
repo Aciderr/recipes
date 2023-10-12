@@ -1,7 +1,7 @@
 name: Deploy web recipes app
 on: [push, workflow_dispatch]
 jobs:
-  Explore-GitHub-Actions:
+  Check-Affected-Apps:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -11,5 +11,11 @@ jobs:
       - run: git fetch --no-tags --prune --depth=5 origin main
       - uses: nrwl/nx-set-shas@v3
       - run: npm ci
-      - run: npx nx show projects --affected
+      - run: |
+          APPS=`npx nx show projects --affected`
+          if ! grep -q "$APPS" <<< web; then
+            exit 1;
+          fi
+      - run:
+          echo "OK"
 
