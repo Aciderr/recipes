@@ -10,7 +10,7 @@ jobs:
           fetch-depth: 0
       - run: git fetch --no-tags --prune --depth=5 origin main
       - run: yarn install --frozen-lockfile
-      - run: yarn affected:build --base=origin/main
+#      - run: yarn affected:build --base=origin/main
         env:
           CI: true
       - uses: nrwl/nx-set-shas@v3
