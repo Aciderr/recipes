@@ -14,8 +14,9 @@ jobs:
       - run: |
           APPS=`npx nx show projects --affected`
           if ! grep -q "$APPS" <<< web; then
+            echo "exit 1"
             exit 1
+            echo "exit 2"
           fi
-      - run:
-          echo "OK"
+      - run: echo "OK"
 
