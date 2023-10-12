@@ -9,4 +9,4 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
-      - run: echo "nx nx show projects --affected" 
+      - run: nx nx show projects --affected 
