@@ -4,7 +4,7 @@
   "projectType": "application",
   "prefix": "fo",
   "sourceRoot": "apps/web/src",
-  "tags": ["web"],
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -89,6 +89,13 @@
       "executor": "@nx/web:file-server",
       "options": {
         "buildTarget": "web:build"
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/web",
+        "commands": ["node deploy.js"]
       }
     }
   }
