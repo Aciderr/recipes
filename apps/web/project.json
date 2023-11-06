@@ -95,7 +95,7 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "apps/web",
-        "commands": ["node deploy.js"]
+        "command": "aws s3 sync dist/apps/web s3://foodrecipies --region eu-central-1"
       }
     }
   }
