@@ -9,7 +9,6 @@ jobs:
       AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
     steps:
       # Install Python 3.9
-      - name: LS
       - run: ls -a
       - name: Install Python 3.9
         uses: actions/setup-python@v2
