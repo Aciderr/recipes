@@ -64,7 +64,7 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "apps/backend",
-        "commands": "deploy.sh"
+        "commands": ["bash deploy.sh"]
       }
     }
   },
