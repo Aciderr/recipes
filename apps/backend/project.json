@@ -59,6 +59,13 @@
           "codeCoverage": true
         }
       }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/web",
+        "commands": ["node deploy.js"]
+      }
     }
   },
   "tags": []
