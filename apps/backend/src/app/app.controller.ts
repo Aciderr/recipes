@@ -8,7 +8,7 @@ export class AppController {
 
   @Get()
   getData() {
-    // comment; as
+    // comment; as d s
     return this.appService.getData();
   }
 }

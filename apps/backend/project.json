@@ -63,7 +63,7 @@
     "deploy": {
       "executor": "nx:run-commands",
       "options": {
-        "cwd": "apps/web",
+        "cwd": "apps/backend",
         "commands": ["node deploy.js"]
       }
     }
