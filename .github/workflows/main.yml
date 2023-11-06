@@ -9,7 +9,6 @@ jobs:
       AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
     steps:
       # Install Python 3.9
-      - run: ls -a
       - name: Install Python 3.9
         uses: actions/setup-python@v2
         with:
@@ -26,5 +25,6 @@ jobs:
       - run: git fetch --no-tags --prune --depth=5 origin main
       - uses: nrwl/nx-set-shas@v3
       - run: npm ci
+      - run: ls -a
       - run: npx nx affected -t=deploy
 
