@@ -1,1 +1,1 @@
-eb deploy
+ls -a
