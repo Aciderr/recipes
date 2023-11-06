@@ -25,5 +25,5 @@ jobs:
       - run: git fetch --no-tags --prune --depth=5 origin main
       - uses: nrwl/nx-set-shas@v3
       - run: npm ci
-      - run: nx affected -t=deploy
+      - run: npx nx affected -t=deploy
 
